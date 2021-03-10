@@ -1,0 +1,10 @@
+# Temporary install files
+.libs/
+
+# resourse folder
+.res/
+!.res/NotepadTest.png
+
+.src/__pycache__
+
+
