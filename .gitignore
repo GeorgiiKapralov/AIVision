@@ -5,6 +5,8 @@
 .res/
 !.res/NotepadTest.png
 
+output.log
+
 .src/__pycache__
 
 

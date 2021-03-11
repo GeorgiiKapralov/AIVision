@@ -66,8 +66,8 @@ def UpdateKeyboardShortcutEnabled():
         logger.info('\'v\'    : CannyEdgeFilter')
         logger.info('\'s\'    : Save to file')
         logger.info('\'q\'    : Exit')
-        logger.info('\'.\'    : MatchTemplate')
-        logger.info('\'/\'    : TextRecognition')
+        logger.info('\'/\'    : MatchTemplate')
+        logger.info('\'.\'    : TextRecognition')
         logger.info('\'End\'  : StopView')
 
         keyboard.add_hotkey('z', lambda : StartView(0))

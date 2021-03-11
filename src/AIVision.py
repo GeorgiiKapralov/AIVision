@@ -229,7 +229,7 @@ class AIVision:
     def GetTextData(self):
         return self.__TextData
       
-    def GetWordData(self, word):
+    def GetWordData(self, word, addDebugInfo = False):
         for i, el in enumerate(self.__TextData.splitlines()):
             if i == 0:
                 continue
@@ -240,6 +240,8 @@ class AIVision:
                     continue
                     
                 x, y, w, h = int(el[6]), int(el[7]), int(el[8]), int(el[9])
+                if addDebugInfo == True:
+                    cv2.rectangle(self.__CurrentFrame, (x, y), (w + x, h + y), (0, 0, 255), 1)
                 return x, y, w, h
                 
             except IndexError:
